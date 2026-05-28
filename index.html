@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌍 Language Learning App</h1>
+
+  <div class="lesson-box">
+    <h2 id="word">Hola</h2>
+    <p id="translation">Translation: Hello</p>
+    <button onclick="playPronunciation()">🔊 Pronounce</button>
+  </div>
+
+  <div class="navigation">
+    <button onclick="previousLesson()">Previous</button>
+    <button onclick="nextLesson()">Next</button>
+  </div>
+
+  <div class="quiz-box">
+    <h2>Quick Quiz</h2>
+    <p id="quizQuestion">What is the translation of "Gracias"?</p>
+
+    <input type="text" id="quizAnswer" placeholder="Type your answer">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="result"></p>
+  </div>
+
+  <div class="category-box">
+    <h2>Categories</h2>
+    <ul>
+      <li>Vocabulary</li>
+      <li>Grammar</li>
+      <li>Phrases</li>
+      <li>Pronunciation</li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
